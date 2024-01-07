@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Melete';
+    src: url(fonts/Melete-Regular.otf);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    position: relative;
+    background: #080808 !important;
+    color: #ffffff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/house.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Melete', sans-serif;
+    position: relative;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+nav {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    width: 333px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 20px;
+
+    }
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Melete', sans-serif;
+    font-size: 17px;
+    position: relative;
+    
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #1d1d1dad;
+    position: absolute;
+    left: 0; 
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li a:hover{
+    color: #cccccc6c;
+}
+.header-image{
+    margin-top: 440px;
+    width: 100%;
+    height: 250px;
+    background-image: url(images/cgc-s.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#about{
+    padding: 100px;
+    color: #cbc1c1;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex: 1;
+    position: relative;
+}
+.about-col-1 img{
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+.about-col-2{
+    flex: 1;
+    padding: 20px;
+}
+.contact-col-1{
+    flex: 2;
+    position: relative;
+}
+.contact-col-1 img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+.contact-col-2{
+    flex: 2;
+    padding: 20px;
+}
+.sub-title{  
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Melete', sans-serif;
+}
+.sub-title-black{  
+    font-size: 50px;
+    font-weight: 300;
+    color: #000000;
+    font-family: 'Melete', sans-serif;
+}
+.sub-title-right{
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Melete', sans-serif;
+    text-align: right;
+}
+.text-about{
+    text-align: right;
+    margin-top: 30px;
+}
+
+#services{
+    background: #d3cbcb;
+    padding: 70px;
+    margin: 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.card {
+    margin: 10px;
+}
+
+
+
+.flip-card {
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+
+  .flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+font-family: 'Genos', sans-serif;
+font-size: 12px;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+}
+
+.flip-card-front {
+    color: #000000;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .flip-card-back {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    transform: rotateY(180deg);
+}
+.contact-logo{
+    width: 800px;
+    display: block;
+}
+.house{
+    position: absolute;
+    left: 840px;
+    opacity: 0.8;
+}
+.info{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    background: radial-gradient(circle,  #ffffff, #ffffff00);
+    text-align: center;
+    -webkit-text-stroke: 1px #000000;
+    text-shadow: 0 0 2px  #ffffff;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 0 10px rgba(176, 161, 161, 0.781);
+    opacity: 0.8;
+}
+.contact-col-2{
+    padding-top: 290px;
+    padding-right: 0;
+    padding-left: 30px;
+    margin: 0;
+}
+.contact-form{
+    text-align: right ;
+    box-sizing: border-box;
+    background: radial-gradient(circle,  #282727c9, #15151574);
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-shadow: 0 0 10px rgba(103, 102, 102, 0.384);
+    text-align: center;
+    padding: 10px !important;
+
+}
+.form-label{
+    font-size: 20px;
+    font-weight: medium;
+    -webkit-text-stroke: 1px #ffffff;
+    text-shadow: 0 0 3px #000000;
+}
+form input, form select, form textarea{
+    display: block;
+    width: 100%;
+    max-width: 350px ;
+    margin: 0 auto !important;
+    padding: 7px !important;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    font-size: 14px !important;
+    font-family: 'Resamitz', sans-serif !important;
+}
+.form-input:focus{
+    border: 1px solid #ff004f;
+}
+.form-textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.form-textarea:focus{
+    border: 1px solid #ff004f;
+}
+.form-submit{
+    margin: 10px 0;
+    padding: 5px;
+    font-family: 'Melete', sans-serif;
+    width: 40%;
+    border: 2px solid #b00707;
+    border-radius: 3px;
+    outline: none;
+    background: #ff000062;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.form-submit:hover{
+    background: #fff;
+    color: #ff0000;
+    border: 2px solid #b00707;
+    border-radius: 3%;
+    transition: 0.5s;
+}
+
+#scrollUpBtn {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffffb1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#scrollUpBtn.visible {
+    opacity: 1;
+    visibility: visible;
+}
+.map{
+    display: block;
+    width: 44%;
+    height: 370px;
+    position:absolute;
+    bottom: 92px;
+    left: 91px;
+    opacity: 0.7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(176, 161, 161, 0.781);
+}
+footer{
+    color: #fff !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding: 20px;
+}
+
